@@ -163,7 +163,11 @@ class _ProgressTrackerState extends State<ProgressTracker> {
         const SizedBox(height: 5),
         ElevatedButton(
           onPressed: onIncrement,
-          child: const Text('Increment Progress'),
+          style: ElevatedButton.styleFrom(backgroundColor: color), // Set button color
+          child: Text(
+            'Increment Progress',
+            style: TextStyle(color: Colors.white), // Set text color
+          ),
         ),
       ],
     );
